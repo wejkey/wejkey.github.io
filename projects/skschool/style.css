@@ -1,0 +1,72 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00d1b2;
+}
+
+/* Countdown sections */
+section#countdowns {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1000px;
+    flex-grow: 1;
+}
+
+.countdown-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.countdown-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #00d1b2;
+}
+
+.countdown {
+    font-size: 1.6rem;
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #cccccc;
+}
