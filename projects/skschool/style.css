@@ -69,7 +69,7 @@ footer p {
 
 a{
     text-decoration: none;
-    color: #62a897;
+    color: #43d8b3;
     text-align: center;
     margin-top: 10px;
 }
@@ -138,6 +138,9 @@ a{
     font-size: 1em;
 }
 
+b{
+    font-weight: 550;
+}
 
 
 
@@ -252,4 +255,4 @@ a{
 * {
     scrollbar-width: thin; 
     scrollbar-color: #00d1b2 #121212; 
-}   
+}
