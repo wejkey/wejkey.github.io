@@ -1,4 +1,4 @@
-29## v1.0.7
+## v1.0.7
 - Updated (Slovakia school holidays)
 
 ## v1.0.6
