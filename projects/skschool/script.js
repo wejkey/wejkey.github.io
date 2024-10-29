@@ -20,7 +20,7 @@ function countdown(date, elementId) {
     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
     if (timeRemaining < 0) {
-        document.getElementById(elementId).innerHTML = "Prázdniny skončili, je čas sa pripraviť do školy!";
+        document.getElementById(elementId).innerHTML = "Prázdniny sú tu";
     } else {
         document.getElementById(elementId).innerHTML = `${months}M : ${weeks}W : ${days}D : ${hours}H : ${minutes}M : ${seconds}S`;
     }
