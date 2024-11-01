@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button:disabled {
+    background-color: #eee;
+    cursor: not-allowed;
+    color: #aaa;
+    border: 1px solid #ddd;
+}
+
+#themeToggleButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    margin: 3px;
+}
