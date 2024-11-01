@@ -1,3 +1,6 @@
+## v1.1.1
+- Updated homepage
+
 ## v1.1.0
 - Global icon change *(favicon)*
 
