@@ -45,7 +45,7 @@ hr {
     background-color: #00d1b2;
     width: 0;
     margin: 0;
-    transition: width 0.5s ease-in-out;
+    transition: width 1s ease-in-out;
 }
 
 h2:hover + hr {
