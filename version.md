@@ -1,3 +1,6 @@
+## v1.0.8
+- Added "Mapath"
+
 ## v1.0.7
 - Updated (Slovakia school holidays)
 
@@ -20,6 +23,7 @@
 
 ## 1.0.1
 - Updated homepage
+- Added "Slovkaia School Holidays"
 
 ## 1.0.0
 - Created
