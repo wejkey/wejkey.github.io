@@ -1,3 +1,6 @@
+## v1.1.0
+- Global icon change *(favicon)*
+
 ## v1.0.9.1 (bugfix)
 - Changed *index.html* - code *(content)*
 - Removed previous update, because of bug *(v1.0.9)*
@@ -12,7 +15,7 @@
 - Updated **Slovakia School Holidays**
 
 ## v1.0.6
-- Added "v" in version name (ha)
+- Added "v" in version name *(ha)*
 
 ## 1.0.5
 - Uppdated **Slovakia School Holidays**
