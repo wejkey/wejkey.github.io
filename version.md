@@ -1,6 +1,6 @@
 ## v1.0.9.1 (bugfix)
 - Changed *index.html* - code *(content)*
-- Removed previous update *(v1.0.9)*
+- Removed previous update, because of bug *(v1.0.9)*
 
 ## v1.0.9
 - Updated *index.html* - code *(content)*
