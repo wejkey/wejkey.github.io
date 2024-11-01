@@ -1,3 +1,8 @@
+## v1.1.2
+- Updated [info](https://soneviconia.github.io/info/001.html)
+- Updated **Slovakia School Holidays**
+- Updated homepage + its style
+
 ## v1.1.1
 - Updated homepage
 
