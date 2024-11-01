@@ -1,5 +1,4 @@
 const holidays = {
-    "autumnBreak": new Date('2024-10-30T00:00:00'),
     "christmasBreak": new Date('2024-12-21T00:00:00'),
     "springBreakEast": new Date('2025-02-15T00:00:00'),
     "springBreakWest": new Date('2025-02-22T00:00:00'),
@@ -27,7 +26,6 @@ function countdown(date, elementId) {
 }
 
 function updateCountdowns() {
-    countdown(holidays.autumnBreak, 'autumn-break');
     countdown(holidays.christmasBreak, 'christmas-break');
     countdown(holidays.springBreakEast, 'spring-break-east');
     countdown(holidays.springBreakWest, 'spring-break-west');
