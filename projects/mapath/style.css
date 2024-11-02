@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body, html {
     margin: 0;
     height: 100%;
@@ -51,4 +57,44 @@ button:disabled {
     font-size: 18px;
     padding: 5px;
     margin: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00d1b2; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #02e3c2; 
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin; 
+    scrollbar-color: #00d1b2 #121212; 
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #cccccc;
 }
