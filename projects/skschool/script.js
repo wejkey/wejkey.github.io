@@ -38,4 +38,3 @@ function updateCountdowns() {
 setInterval(updateCountdowns, 1000);
 
 updateCountdowns();
-
