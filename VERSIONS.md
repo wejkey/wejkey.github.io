@@ -55,4 +55,4 @@
 - Created
 
 
-### <small>Last update: 3.11.24 </small>
+### *Last update: 3.11.24*
