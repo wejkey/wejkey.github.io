@@ -1,0 +1,179 @@
+/* Global style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #00d1b2;
+}
+
+section#countdowns {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1000px;
+    flex-grow: 1;
+}
+
+.countdown-section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.countdown-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #00d1b2;
+}
+
+.countdown {
+    font-size: 1.6rem;
+    background-color: #282828;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: #cccccc;
+}
+
+a{
+    text-decoration: none;
+    color: #43d8b3;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.green {
+    background: linear-gradient(45deg, #2ecc70, #27ae60, #2ecc71);
+    border-color: #27ae60;
+}
+
+.yellow {
+    background: linear-gradient(45deg, #f4c542, #f2b600, #f4c542);
+    border-color: #d4a121;
+    animation: shadowBlurYellow 6s infinite;
+}
+
+.orange {
+    background: linear-gradient(45deg, #f39c12, #e67e22, #f39c12);
+    border-color: #e67e22;
+    animation: shadowBlurOrange 4.5s infinite;
+}
+
+.red {
+    background: linear-gradient(45deg, #e74c3c, #c0392b, #e74c3c);
+    border-color: #c0392b;
+    animation: shadowBlurRed 3s infinite;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00d1b2;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #02e3c2;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #00d1b2 #121212;
+}
+
+
+/* zavináče */
+@media (max-width: 600px) {
+    .countdown {
+        font-size: 1.5rem;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* clr - zavináče */
+@keyframes shadowBlurYellow {
+    0% {
+        box-shadow: 0 0 10px #d4a121;
+    }
+    50% {
+        box-shadow: 0 0 30px #d4a121;
+    }
+    100% {
+        box-shadow: 0 0 10px #d4a121;
+    }
+}
+
+@keyframes shadowBlurOrange {
+    0% {
+        box-shadow: 0 0 10px #e67e22;
+    }
+    50% {
+        box-shadow: 0 0 30px #e67e22;
+    }
+    100% {
+        box-shadow: 0 0 10px #e67e22;
+    }
+}
+
+@keyframes shadowBlurRed {
+    0% {
+        box-shadow: 0 0 10px #c0392b;
+    }
+    50% {
+        box-shadow: 0 0 30px #c0392b;
+    }
+    100% {
+        box-shadow: 0 0 10px #c0392b;
+    }
+}
