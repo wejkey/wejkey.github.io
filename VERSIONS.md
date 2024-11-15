@@ -1,8 +1,7 @@
 ## v1.1.5
 - Updated **Slovakia School Holidays**
 - Fixed **Slovakia School Holidays** dates
-
-### I:
+### (I):
 - *Tried to add tooltips but there were problems*
 
 
