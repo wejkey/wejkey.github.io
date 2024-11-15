@@ -26,11 +26,11 @@
 ## v1.1.0
 - Global icon change *(favicon)*
 
-## v1.0.9.1 (bugfix)
+## v1.0.9.1 (bugfix) - ?
 - Changed *index.html* - code *(content)*
 - Removed previous update, because of bug *(v1.0.9)*
 
-## v1.0.9
+## v1.0.9 - ?
 - Updated *index.html* - code *(content)*
 
 ## v1.0.8
