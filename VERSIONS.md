@@ -1,3 +1,9 @@
+## v1.1.5
+- Updated **Slovakia School Holidays**
+- Fixed **Slovakia School Holidays** dates
+- <small>Tried to add tooltips but there were problems</small>
+
+
 ## v1.1.4
 - Updated homepage
 
@@ -55,4 +61,4 @@
 - Created
 
 
-### *Last update: 3.11.24*
+### *Last update: 15.11.24*
