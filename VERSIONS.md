@@ -1,3 +1,8 @@
+## v1.1.6
+- Added **New Year In Seconds**
+- Added favicon to **Slovakia School Holidays**
+- Removed unused *colors.css* in **Slovakia School Holidays**
+
 ## v1.1.5
 - Updated **Slovakia School Holidays**
 - Fixed **Slovakia School Holidays** dates
