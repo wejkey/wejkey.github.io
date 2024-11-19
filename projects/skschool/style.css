@@ -49,7 +49,7 @@ section#countdowns {
     border-radius: 10px;
     display: inline-block;
     width: 100%;
-    max-width: 500px;
+    max-width: 540px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     opacity: 0;
     animation: fadeIn 1s forwards;
@@ -75,29 +75,6 @@ a{
     color: #43d8b3;
     text-align: center;
     margin-top: 10px;
-}
-
-.green {
-    background: linear-gradient(45deg, #2ecc70, #27ae60, #2ecc71);
-    border-color: #27ae60;
-}
-
-.yellow {
-    background: linear-gradient(45deg, #f4c542, #f2b600, #f4c542);
-    border-color: #d4a121;
-    animation: shadowBlurYellow 6s infinite;
-}
-
-.orange {
-    background: linear-gradient(45deg, #f39c12, #e67e22, #f39c12);
-    border-color: #e67e22;
-    animation: shadowBlurOrange 4.5s infinite;
-}
-
-.red {
-    background: linear-gradient(45deg, #e74c3c, #c0392b, #e74c3c);
-    border-color: #c0392b;
-    animation: shadowBlurRed 3s infinite;
 }
 
 ::-webkit-scrollbar {
@@ -176,4 +153,89 @@ a{
     100% {
         box-shadow: 0 0 10px #c0392b;
     }
+}
+
+
+
+
+/* Karty */
+
+.container {
+    width: 68%;
+    margin: 20px auto;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 100px 0;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: rgba(51, 51, 51, 0.85);
+    transition: box-shadow 0.3s ease;
+    position: relative;
+    border: 2px solid transparent;
+    background-image: linear-gradient(#121212, #121212), linear-gradient(45deg, #d4a121, #f4c542);
+    background-clip: padding-box, border-box;
+    background-size: 100%, 100%;
+}
+
+.card:hover {
+    filter: brightness(1.05);
+    cursor: pointer;
+}
+
+.card .icon {
+    font-size: 1.5em;
+    margin-right: 15px;
+    padding: 5px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card .content {
+    flex: 1;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    margin: 5px 0 0;
+    font-size: 1em;
+}
+
+/**/
+.green {
+    background: linear-gradient(45deg, #2ecc70, #27ae60, #2ecc71);
+    border-color: #27ae60;
+    
+}
+
+.yellow {
+    background: linear-gradient(45deg, #f4c542, #f2b600, #f4c542);
+    border-color: #d4a121;
+    animation: shadowBlurYellow 6s infinite;
+}
+
+.orange {
+    background: linear-gradient(45deg, #f39c12, #e67e22, #f39c12);
+    border-color: #e67e22;
+    animation: shadowBlurOrange 4.5s infinite;
+}
+
+.red {
+    background: linear-gradient(45deg, #e74c3c, #c0392b, #e74c3c);
+    border-color: #c0392b;
+    animation: shadowBlurRed 3s infinite;
 }
