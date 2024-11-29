@@ -3,10 +3,10 @@ let map = L.map('map', {
     maxZoom: 18,
     zoomControl: false,
     maxBounds: [
-        [47.75842886022369, 16.84488250599731], // Southwest corner
-        [49.61391633410873, 22.564011231579537] // Northeast corner
+        [47.75842886022369, 16.84488250599731], // SW corner
+        [49.61391633410873, 22.564011231579537] // NE corner
     ]
-}).setView([48.673753, 19.696059], 8); // Slovakia center
+}).setView([48.673753, 19.696059], 8); // center
 
 let polyline = null;
 let tempLatLngs = [];
