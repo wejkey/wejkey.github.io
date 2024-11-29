@@ -1,4 +1,5 @@
 ## v1.1.8
+- Small visual changes
 - Text update
 
 ## v1.1.7
