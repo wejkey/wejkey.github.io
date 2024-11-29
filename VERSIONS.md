@@ -1,3 +1,6 @@
+## v1.1.7.1
+- Text update
+
 ## v1.1.7
 - Updated **Slovakia School Holidays**
 
@@ -67,4 +70,4 @@
 - Created
 
 
-### *Last update: 19.11.24*
+### *Last update: 29.11.24*
