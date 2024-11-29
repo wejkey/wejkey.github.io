@@ -1,3 +1,6 @@
+## v1.0.9.1 (bugfix)
+- Removed non-working part of code in homepage 
+
 ## v1.1.8
 - Small visual changes
 - Text update
