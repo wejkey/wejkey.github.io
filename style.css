@@ -33,19 +33,6 @@ section#projects {
     flex-grow: 1;
 }
 
-hr {
-    border: none;
-    height: 2px;
-    background-color: #00d1b2;
-    width: 0;
-    margin: 0;
-    transition: width 1s ease-in-out;
-}
-
-h2:hover + hr {
-    width: 100%;
-}
-
 .project {
     background-color: #282828;
     padding: 20px;
