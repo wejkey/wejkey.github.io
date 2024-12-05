@@ -1,4 +1,7 @@
-## v1.0.9.1 (bugfix)
+## v1.0.9
+- Updated **Slovakia School Holidays** (Preliminary)
+
+## v1.0.8.1 (bugfix)
 - Removed non-working part of code in homepage 
 
 ## v1.1.8
