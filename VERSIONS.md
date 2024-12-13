@@ -1,7 +1,10 @@
-## v1.0.9
+## v1.2
+- Updated **Slovakia School Holidays**
+
+## v1.1.9
 - Updated **Slovakia School Holidays** (Preliminary)
 
-## v1.0.8.1 (bugfix)
+## v1.1.8.1 (bugfix)
 - Removed non-working part of code in homepage 
 
 ## v1.1.8
@@ -36,7 +39,7 @@
 ## v1.1.1
 - Updated homepage
 
-## v1.1.0
+## v1.1
 - Global icon change *(favicon)*
 
 ## v1.0.9.1 (bugfix) - ?
@@ -72,6 +75,9 @@
 ## 1.0.1
 - Updated homepage
 - Added **Slovakia School Holidays**
+
+## 1.0
+- Created
 
 ## 1.0.0
 - Created
