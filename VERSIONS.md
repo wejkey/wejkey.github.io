@@ -1,3 +1,7 @@
+## v1.2.1
+- Updated **Mapath** (Big update)
+- Updated [info](https://soneviconia.github.io/info/001.html)
+
 ## v1.2
 - Updated **Slovakia School Holidays**
 
@@ -76,11 +80,8 @@
 - Updated homepage
 - Added **Slovakia School Holidays**
 
-## 1.0
-- Created
-
 ## 1.0.0
 - Created
 
 
-### *Last update: 29.11.24*
+### *Last update: 19.12.24*
