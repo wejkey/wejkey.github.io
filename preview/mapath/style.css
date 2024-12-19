@@ -60,6 +60,7 @@ body, html {
     cursor: not-allowed;
 }
 
+/* Darkmod */
 body.dark-mode, html.dark-mode {
     background-color: #121212;
     color: #fff;
@@ -71,10 +72,17 @@ body.dark-mode #info-panel {
 }
 
 body.dark-mode #action-buttons button {
-    background-color: #444;
-    color: #fff;
+    background-color: #666; 
+    color: white;
+    border: 2px solid #666; 
 }
 
 body.dark-mode #action-buttons button:hover {
     background-color: #555;
+}
+
+body.dark-mode #action-buttons button:disabled {
+    background-color: #444; 
+    cursor: not-allowed;
+    border: 2px solid #444; 
 }
