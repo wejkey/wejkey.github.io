@@ -2,6 +2,7 @@ let map;
 let polyline = null;
 let tempLatLngs = [];
 let isDrawing = false;
+let totalDistance = 0;
 
 const lightModeTiles = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
 const darkModeTiles = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
@@ -50,6 +51,7 @@ function startPath() {
 
     isDrawing = true;
     tempLatLngs = [];
+    totalDistance = 0; 
 
     if (polyline) {
         map.removeLayer(polyline);
@@ -63,7 +65,7 @@ function startPath() {
     document.getElementById('stopButton').disabled = false;
     document.getElementById('startButton').disabled = true;
     document.getElementById('undoButton').disabled = true;
-    document.getElementById('saveButton').disabled = true; 
+    document.getElementById('saveButton').disabled = true;
 }
 
 function stopPath() {
@@ -74,13 +76,16 @@ function stopPath() {
 
     document.getElementById('stopButton').disabled = true;
     document.getElementById('startButton').disabled = false;
-    document.getElementById('saveButton').disabled = false; 
+    document.getElementById('saveButton').disabled = false;
 }
 
 function updatePath(e) {
     if (!isDrawing) return;
 
     const latlng = e.latlng;
+    if (tempLatLngs.length > 0) {
+        totalDistance += map.distance(tempLatLngs[tempLatLngs.length - 1], latlng);
+    }
     tempLatLngs.push(latlng);
     polyline.addLatLng(latlng);
 
@@ -99,7 +104,10 @@ function previewPath(e) {
 function undoPath() {
     if (tempLatLngs.length === 0) return;
 
-    tempLatLngs.pop();
+    const removedLatLng = tempLatLngs.pop();
+    if (tempLatLngs.length > 0) {
+        totalDistance -= map.distance(tempLatLngs[tempLatLngs.length - 1], removedLatLng);
+    }
     polyline.setLatLngs(tempLatLngs);
 
     calculateMetrics();
@@ -114,13 +122,8 @@ function calculateMetrics() {
         return;
     }
 
-    const distance = tempLatLngs.reduce((acc, latlng, index, arr) => {
-        if (index === 0) return acc;
-        return acc + map.distance(arr[index - 1], latlng);
-    }, 0);
-
-    const distanceInKm = distance / 1000;
-    const walkingTime = (distance / 1.4) / 60; 
+    const distanceInKm = totalDistance / 1000;
+    const walkingTime = (totalDistance / 1.4) / 60;
 
     document.getElementById('distanceDisplay').innerText = `Distance: ${distanceInKm.toFixed(2)} km`;
     document.getElementById('timeDisplay').innerText = `Walking Time: ${walkingTime.toFixed(2)} min`;
@@ -128,48 +131,16 @@ function calculateMetrics() {
 
 function savePath() {
     if (polyline && tempLatLngs.length > 0) {
-        const pathData = JSON.stringify(tempLatLngs);
-
-        const htmlContent = `
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Saved Path</title>
-            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-            <style>
-                body, html { margin: 0; height: 100%; font-family: Arial, sans-serif; background-color: black; color: white; }
-                #map { width: 100%; height: 100%; }
-            </style>
-        </head>
-        <body>
-            <div id="map"></div>
-            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-            <script>
-                const savedPathData = ${pathData};
-
-                let map = L.map('map').setView([48.673753, 19.696059], 8);
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    maxZoom: 19,
-                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(map);
-
-                const savedPath = L.polyline(savedPathData, { color: 'blue' }).addTo(map);
-                map.fitBounds(savedPath.getBounds());
-            </script>
-        </body>
-        </html>`;
-
-        const blob = new Blob([htmlContent], { type: 'text/html' });
+        const geojsonPath = polyline.toGeoJSON(); 
+        const blob = new Blob([JSON.stringify(geojsonPath)], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
 
         const a = document.createElement('a');
         a.href = url;
-        a.download = 'map_plan.html';
+        a.download = 'path.geojson';
         a.click();
 
-        URL.revokeObjectURL(url); 
+        URL.revokeObjectURL(url);
     }
 }
 
@@ -185,7 +156,7 @@ function toggleDarkMode() {
             subdomains: 'abcd',
             attribution: '© OpenStreetMap contributors © CartoDB'
         }).addTo(map);
-        darkModeButton.innerHTML = "🌞"; 
+        darkModeButton.innerHTML = "☀️";
     } else {
         currentTileLayer.remove();
         currentTileLayer = L.tileLayer(lightModeTiles, {
@@ -193,7 +164,7 @@ function toggleDarkMode() {
             subdomains: 'abcd',
             attribution: '© OpenStreetMap contributors © CartoDB'
         }).addTo(map);
-        darkModeButton.innerHTML = "🌙"; 
+        darkModeButton.innerHTML = "🌙";
     }
 }
 
