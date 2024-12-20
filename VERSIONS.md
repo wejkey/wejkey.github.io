@@ -1,3 +1,6 @@
+## v1.2.2.3 (bugfix) 
+- Fixed Homepage text
+
 ## v1.2.2.2 (bugfix) - RE
 - Updated **Slovakia School Holidays**
 - Updated **Mapath (Slovakia)**
@@ -6,7 +9,7 @@
 - Updated [info](https://soneviconia.github.io/info/001.html)
 
 ## v1.2.2.1 (bugfix)
-- Fixed **Slovakia School Holidays** oountdowns
+- Fixed **Slovakia School Holidays** countdowns
 
 ## v1.2.2
 - Updated **Slovakia School Holidays**
