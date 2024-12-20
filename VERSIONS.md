@@ -2,7 +2,7 @@
 - Updated **Slovakia School Holidays**
 - Updated **Mapath (Slovakia)**
 - Updated **New Year In Seconds**
-- Updated **[Preview](https://github.com/soneviconia/soneviconia.github.io/tree/main)**
+- Updated [Preview](https://github.com/soneviconia/soneviconia.github.io/tree/main)
 - Updated [info](https://soneviconia.github.io/info/001.html)
 
 ## v1.2.2.1 (bugfix)
