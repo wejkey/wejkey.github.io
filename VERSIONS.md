@@ -1,4 +1,11 @@
-## v1.1.8.1 (bugfix)
+## v1.2.2.2 (bugfix) - RE
+- Updated **Slovakia School Holidays**
+- Updated **Mapath (Slovakia)**
+- Updated **New Year In Seconds**
+- Updated **[Preview](https://github.com/soneviconia/soneviconia.github.io/tree/main)**
+- Updated [info](https://soneviconia.github.io/info/001.html)
+
+## v1.2.2.1 (bugfix)
 - Fixed **Slovakia School Holidays** oountdowns
 
 ## v1.2.2
@@ -69,7 +76,7 @@
 - Added "v" in version name *(ha)*
 
 ## 1.0.5
-- Uppdated **Slovakia School Holidays**
+- Updated **Slovakia School Holidays**
 
 ## 1.0.4
 - Updated homepage
