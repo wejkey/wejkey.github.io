@@ -16,11 +16,12 @@
         <p id="mouseCoords">Coordinates: 0.00, 0.00</p>
     </div>
     <div id="action-buttons">
-        <button id="startButton" title="Start" onclick="startPath()">▶️</button>
-        <button id="stopButton" title="Stop" onclick="stopPath()" disabled>⏹️</button>
-        <button id="undoButton" title="Undo" onclick="undoPath()" disabled>↩️</button>
-        <button id="saveButton" title="Save Path" onclick="savePath()" disabled>💾</button>
-        <button id="darkModeButton" title="Toggle Dark Mode" onclick="toggleDarkMode()">🌙</button>
+        <button id="startButton" title="Start" onclick="startPath()" aria-label="Start Drawing Path">🟢</button>
+        <button id="stopButton" title="Stop" onclick="stopPath()" disabled aria-label="Stop Drawing Path">🔴</button>
+        <button id="undoButton" title="Undo" onclick="undoPath()" disabled aria-label="Undo Last Point">↩️</button>
+        <button id="saveButton" title="Save Path" onclick="savePath()" disabled aria-label="Save Path">💾</button>
+        <button id="darkModeButton" title="Toggle Dark Mode" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">🌙</button>
+        
     </div>
     <div id="map"></div>
 
