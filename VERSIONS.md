@@ -1,3 +1,8 @@
+## v1.2.3 (New Year Update)
+- Updated homepage
+- Updated footer(s)
+- Removed **New Year In Seconds**
+
 ## v1.2.2.3 (bugfix) 
 - Fixed Homepage text
 
@@ -100,4 +105,4 @@
 - Created
 
 
-### *Last update: 20.12.24*
+### *Last update: 1.1.25 (~04:01)*
