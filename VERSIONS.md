@@ -1,3 +1,7 @@
+## v1.2.4
+- Updated homepage
+- Updated **Slovakia School Holidays**
+
 ## v1.2.3 (New Year Update)
 - Updated homepage
 - Updated footer(s)
