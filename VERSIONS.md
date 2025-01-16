@@ -1,3 +1,8 @@
+## v1.2.5
+- Added **New Year In Seconds (v2)**
+- Updated homepage
+- Updated **Slovakia School Holidays**
+
 ## v1.2.4
 - Updated homepage
 - Updated **Slovakia School Holidays**
