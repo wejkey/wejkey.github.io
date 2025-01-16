@@ -1,5 +1,5 @@
-## v1.2.5
-- Minor bug fixes
+## v1.2.5.1
+- Bug fixe
 
 ## v1.2.5
 - Added **New Year In Seconds (v2)**
