@@ -1,5 +1,5 @@
 function updateCountdown() {
-    const newYear = new Date("January 1, 2025 00:00:00").getTime();
+    const newYear = new Date("January 1, 2026 00:00:00").getTime();
     const now = new Date().getTime();
     const difference = newYear - now;
 
