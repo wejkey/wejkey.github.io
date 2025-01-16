@@ -113,5 +113,9 @@
 ## 1.0.0
 - Created
 
+--------------PREVIEW--------------
 
-### *Last update: 1.1.25 (~04:01)*
+## 1.0.1
+- Added **New Year Info (NYI)
+
+### *Last update: 16.1.25*
