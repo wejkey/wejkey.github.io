@@ -1,5 +1,8 @@
+## v1.2.6
+- Added **Dvd**
+
 ## v1.2.5.1
-- Bug fixe
+- Bug fixes
 
 ## v1.2.5
 - Added **New Year In Seconds (v2)**
