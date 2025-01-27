@@ -124,4 +124,4 @@
 ## 1.0.1
 - Added **New Year Info (NYI)
 
-### *Last update: 16.1.25*
+### *Last update: January 27, 2025*
