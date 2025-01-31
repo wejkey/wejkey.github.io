@@ -1,3 +1,6 @@
+## v1.2.7
+- Updated **Slovakia School Holidays**
+
 ## v1.2.6
 - Added **Dvd**
 
@@ -124,4 +127,4 @@
 ## 1.0.1
 - Added **New Year Info (NYI)
 
-### *Last update: January 27, 2025*
+### *Last update: January 31, 2025*
