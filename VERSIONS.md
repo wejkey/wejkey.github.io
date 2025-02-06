@@ -1,3 +1,7 @@
+## v1.2.8
++ Last update for **SSH** category
+- Updated **Slovakia School Holidays**
+
 ## v1.2.7
 - Updated **Slovakia School Holidays**
 
@@ -127,4 +131,4 @@
 ## 1.0.1
 - Added **New Year Info (NYI)
 
-### *Last update: January 31, 2025*
+### *Last update: -*
