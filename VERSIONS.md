@@ -1,3 +1,7 @@
+## v1.2.9
+- Updated **NYIS**
+- Changed name 
+
 ## v1.2.8
 + Last update for **SSH** category
 - Updated **Slovakia School Holidays**
