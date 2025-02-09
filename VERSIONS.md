@@ -3,7 +3,7 @@
 - Changed name 
 
 ## v1.2.8
-+ Last update for **SSH** category
++ Last mentioned update for **SSH** category
 - Updated **Slovakia School Holidays**
 
 ## v1.2.7
@@ -133,6 +133,6 @@
 --------------PREVIEW--------------
 
 ## 1.0.1
-- Added **New Year Info (NYI)
+- Added **New Year Info (NYI)**
 
 ### *Last update: -*
