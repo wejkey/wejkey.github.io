@@ -1,3 +1,7 @@
+## v1.3
+- Updated homepage
+- Making new project
+
 ## v1.2.9
 - Updated **NYIS**
 - Changed name 
