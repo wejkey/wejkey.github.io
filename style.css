@@ -118,3 +118,66 @@ footer p {
     scrollbar-width: thin; 
     scrollbar-color: #00d1b2 #121212; 
 }   
+
+/* Project2 */
+.pin-icon {
+    width: 20px;
+    height: 20px; 
+    margin-right: 10px;
+    object-fit: contain; 
+}
+
+.project2 {
+    background: linear-gradient(45deg, #f39c12, #e67e22, #f39c12);
+    border-color: #e67e22;
+    animation: shadowBlurOrange 9s infinite;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    position: relative;
+    top: -15px;
+    overflow: hidden; 
+}
+
+.project-header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project2 h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.last-update2 {
+    font-size: 0.9em;
+    color: #000000;
+    margin-left: auto;
+    margin-top: -30px; 
+}
+
+.project2 p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.project2 a {
+    color: #96ffef;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+@keyframes shadowBlurOrange {
+    0% {
+        box-shadow: 0 0 10px #e67e22;
+    }
+    50% {
+        box-shadow: 0 0 30px #e67e22;
+    }
+    100% {
+        box-shadow: 0 0 10px #e67e22;
+    }
+}
