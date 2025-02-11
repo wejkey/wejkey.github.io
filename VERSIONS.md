@@ -1,3 +1,5 @@
+# Versions updates are disabled (for now)
+
 ## v1.3
 - Updated homepage
 - Making new project
