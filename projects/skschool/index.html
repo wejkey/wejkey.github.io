@@ -1,116 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SoneMC - Plugin</title>
+    <title>Wejkey</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="scrollbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="icon" type="image/png" href="https://github.com/wejkey/wejkey.github.io/raw/main/sonemc/images/sonemcicon.png">
-    <script>
-        function filterVersions(status) {
-    const buttons = document.querySelectorAll('.filter-btn');
-    buttons.forEach(button => button.classList.remove('active'));
-    const clickedButton = document.querySelector(`[onclick="filterVersions('${status}')"]`);
-    clickedButton.classList.add('active');
-
-    const rows = document.querySelectorAll('#versionsTable tbody tr');
-    rows.forEach(row => {
-        if (status === 'all' || row.getAttribute('data-status') === status) {
-            row.style.display = '';
-        } else {
-            row.style.display = 'none';
-        }
-    });
-} // script is not that so no need to make script.js
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://github.com/Wejkey/icon/raw/main/wejkeyprj.png">
 </head>
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <div class="logo">
-                <img src="https://github.com/wejkey/wejkey.github.io/raw/main/sonemc/images/sonemcorg.png" alt="Logo">
+    
+    <header>
+        <h1>Školské prázdniny na Slovensku</h1>
+        <a href="https://Wejkey.github.io/info/001.html">Informačné tabuľky</a>
+    </header>
+<div class="container">
+    <div class="category">
+        <div class="card green">
+            <div class="icon">
+                <i class="fas fa-exclamation-circle"></i>
             </div>
-            <ul>
-                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
-            </ul>
-            <div class="wver">
-                <p>Last update: xx.2x2025</p>
+            <div class="content">
+                <h3>Prázdniny</h3>
+                <p>Prázdniny sú práve teraz, pre Košický a Prešovský kraj</p>
             </div>
-        </nav>
-
-        <main class="main-content">
-            <section id="title-section">
-                <h1>SoneMC Minecraft Plugins</h1>
-                <p>Customizable Minecraft plugins for Spigot/Bukkit/Paper built for versions 1.20.2+</p>
-            </section>
-
-            <section id="about">
-                <h2>Plugin name</h2>
-                <p>SO there will be not so many text so wi wi lai fefecin wfipf jwiuopgrneu gern vurevnutrvtnu vnturand rand=(5,4)dwaijdwajidwajdwjaidjwaj
-                </p>
-            </section>
-
-
-            <section id="projects">
-                <div class="table-container">
-                    <div class="filter-buttons">
-                        <button class="filter-btn" onclick="filterVersions('all')">All Versions</button>
-                        <button class="filter-btn" onclick="filterVersions('stable')">Stable</button>
-                        <button class="filter-btn" onclick="filterVersions('developing')">Under Development</button>
-                    </div>
-            
-                    <table id="versionsTable">
-                        <thead>
-                            <tr>
-                                <th>Date</th>
-                                <th>Status</th>
-                                <th>Version</th>
-                                <th>Small Updates</th>
-                                <th>Download</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr data-status="stable">
-                                <td>2025-02-10</td>
-                                <td><span class="status-indicator status-stable" data-status="stable"><span class="tooltip">Stable</span></span></td>
-                                <td>1.0.0</td>
-                                <td><small>Initial release with basic functionality and setup.</small></td>
-                                <td><button class="download-btn">Download</button></td>
-                            </tr>
-                            <tr data-status="developing">
-                                <td>2025-02-12</td>
-                                <td><span class="status-indicator status-dev" data-status="dev"><span class="tooltip">Under Development</span></span></td>
-                                <td>1.1.0</td>
-                                <td><small>Added new features and performance improvements.</small></td>
-                                <td><button class="download-btn">Download</button></td>
-                            </tr>
-                            <tr data-status="unstable">
-                                <td>2025-02-13</td>
-                                <td><span class="status-indicator status-unstable" data-status="unstable"><span class="tooltip">Unstable</span></span></td>
-                                <td>1.2.0</td>
-                                <td><small>Bug fixes, but some features may still be unstable.</small></td>
-                                <td><button class="download-btn">Download</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <footer>
-                <div class="footer-content">
-                    <p>&copy; <span id="year"></span> SoneMC Minecraft Plugins</p>
-                    <p>Developed by Wejkey</p>
-                    <div class="social-links">
-                        <a href="https://discord.com" target="_blank"><i class="fab fa-discord"></i></a>
-                        <a href="https://github.com/wejkey" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="mailto:youremail@example.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-            </footer>
-        </main>
+        </div>
     </div>
+</div>
+
+<div class="container">
+    <div class="category">
+        <div class="card yellow">
+            <div class="icon">
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="content">
+                <h3>Najbližšie prázdniny (I.)</h3>
+                <p>Prázdniny sú za menej ako 7 dni</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="category">
+        <div class="card orange">
+            <div class="icon">
+                <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <div class="content">
+                <h3>Najbližšie prázdniny (II.)</h3>
+                <p>Prázdniny sú za menej ako 14 dni</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <section id="countdowns">
+        <div class="countdown-section">
+            <h2>Jarné prázdniny (Bratislavský, Nitriansky a Trnavský kraj)</h2>
+            <div id="spring-break-west" class="countdown"></div>
+        </div>
+        <div class="countdown-section">
+            <h2>Jarné prázdniny (Bánskobystrický, Žilinský a Trenčiansky kraj)</h2>
+            <div id="spring-break-central" class="countdown"></div>
+        </div>
+        <div class="countdown-section">
+            <h2>Veľkonočné prázdniny (Všetky regióny)</h2>
+            <div id="easter-break" class="countdown"></div>
+        </div>
+        <div class="countdown-section">
+            <h2>Letné prázdniny (Všetky regióny)</h2>
+            <div id="summer-break" class="countdown"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Wejkey | Made with ❤️ by ❓</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
