@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SoneMC - Plugin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://github.com/wejkey/SoneMC/raw/main/images/soenmcicon2.png">
+    <script>
+        function filterVersions(status) {
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(button => button.classList.remove('active'));
+    const clickedButton = document.querySelector(`[onclick="filterVersions('${status}')"]`);
+    clickedButton.classList.add('active');
+
+    const rows = document.querySelectorAll('#versionsTable tbody tr');
+    rows.forEach(row => {
+        if (status === 'all' || row.getAttribute('data-status') === status) {
+            row.style.display = '';
+        } else {
+            row.style.display = 'none';
+        }
+    });
+} // script is not that so no need to make script.js
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="https://wejkey.github.io/sonemc"><img src="https://github.com/wejkey/SoneMC/raw/main/images/sonemc2.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+            </ul>
+            <div class="wver">
+                <p>Last update: xx.2x2025</p>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <section id="title-section">
+                <h1>SoneMC Minecraft Plugins</h1>
+                <p>Customizable Minecraft plugins for Spigot/Bukkit/Paper built for versions 1.20.2+</p>
+            </section>
+
+            <section id="about">
+                <h2>sOffline</h2>
+                <p>You can see more information about this plugin <a class="plink" href="https://wejkey.github.io/sonemc/docs">here</a>.</p>
+            </section>
+
+
+            <section id="projects">
+                <div class="table-container">
+                    <div class="filter-buttons">
+                        <button class="filter-btn" onclick="filterVersions('all')">All Versions</button>
+                        <button class="filter-btn" onclick="filterVersions('stable')">Stable</button>
+                        <button class="filter-btn" onclick="filterVersions('dev')">Under Development</button>
+                    </div>
+            
+                    <table id="versionsTable">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Version</th>
+                                <th>Small Updates</th>
+                                <th>Download</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-status="stable">
+                                <td>2025-02-14</td>
+                                <td><span class="status-indicator status-stable" data-status="stable"><span class="tooltip">Stable</span></span></td>
+                                <td>1.0</td>
+                                <td><small>First version of this plugin. </small></td>
+                                <td><a href="https://github.com/wejkey/SoneMC/raw/main/SoneMC%20-%20Plugins/sOffline/sOffline_1.0.jar" download><button class="download-btn">Download</button></a></td>                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-content">
+                    <p>© 2025 SoneMC - Minecraft Plugin Development</p>
+                    <p>Developed by Wejkey</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/DxpqN5WXRt" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://github.com/wejkey/SoneMC" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.spigotmc.org/members/sonemc.2226356/" target="_blank"><i class="fas fa-server"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
