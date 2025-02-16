@@ -1,0 +1,69 @@
+#faq {
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+
+.faq-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px;
+    justify-items: center; 
+}
+
+.faq-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faq-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.faq-card:nth-child(odd) {
+    background-color: rgba(18, 18, 20, 0.4);  
+    border: 1px solid rgb(68, 68, 68);
+}
+
+.faq-card:nth-child(even) {
+    background-color: rgba(68, 68, 68, 0.4);  
+}
+
+.faq-icon {
+    font-size: 2.6rem;
+    color: #b373d5;
+    margin-right: 20px; 
+    vertical-align: middle;
+}
+
+#faq h2 del {
+    text-decoration: line-through;
+}
+
+/* ----------------------- */
+/* Text                    */
+/* ----------------------- */
+.faq-card h3 {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.faq-card p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+#faq h2 {
+    font-size: 2.5rem;
+    color: #b373d5;
+    margin-bottom: 40px;
+    text-align: left;
+}
