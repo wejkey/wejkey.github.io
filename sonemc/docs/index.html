@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SoneMC - DOCS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://github.com/wejkey/SoneMC/raw/main/images/soenmcicon2.png">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <a href="https://wejkey.github.io/sonemc"><img src="https://github.com/wejkey/SoneMC/raw/main/images/sonemc2.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="#docsmain"><i class="fas fa-info-circle"></i> DOCS</a></li>
+                <li><a href="#soffline"><i class="fas fa-coins"></i> sOffline</a></li>
+                <li><a href="#sjoin"><i class="fas fa-coins"></i> sJoin</a></li>
+                <li><a href="#scolors"><i class="fas fa-coins"></i> sColors</a></li>
+
+
+            </ul>
+            <div class="wver">
+                <p>Last update: 2.17.2025</p>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <section id="title-section">
+                <h1>SoneMC Minecraft Plugins</h1>
+                <p>Customizable Minecraft plugins for Spigot/Bukkit/Paper built for versions 1.20.2+</p>
+            </section>
+
+            <section id="docsmain">
+                <h2>Plugin Documentation</h2>
+                <p>Here, you'll find detailed documentation for all our plugins. We strive to keep the documentation up to date with each plugin update, but please note that updates may take a few hours or, in some cases, a couple of days. Thank you for your patience!</p>
+            </section>            
+            <hr>
+
+
+
+            <section id="soffline">
+                <h2>sOffline</h2>
+                <p class="version">Version: 1.0</p>
+                <p>
+                    This Minecraft plugin is primarily developed to block players from connecting to the server while maintenance mode is active. It uses permissions, allowing certain players to stay online even during ongoing maintenance.  
+                    <br><br>
+                    Additionally, you can modify the MOTD both as a default setting (effectively using the plugin as an MOTD manager) and during maintenance mode. All settings can be configured inside the plugin files after installation.  
+                    <br><br>
+                    You can see what you can change inside the file <b class="mention">config.yml</b>:  
+                </p>
+                
+                <div class="code-block">
+                    <span class="comment"># Plugin Prefix</span><br>
+                    <span class="key">prefix:</span> "<span class="value">&f▸&c&lsOffline&f◂</span>"<br><br>
+                
+                    <span class="comment"># Kick message</span><br>
+                    <span class="key">maintenance-message:</span><br>
+                      - "<span class="value">&c&m---------&c&l Server Maintenance &c&l&m ---------</span>"<br>
+                      - "<span class="value">&8&lTitle: &7{maintenanceName}</span>"<br>
+                      - "<span class="value">&8&lDescription: &7{description}</span>"<br>
+                      - "<span class="value">&8&lBy: &7{moderator}</span>"<br>
+                      - "<span class="value">&8&lDate: &7{date}</span>"<br>
+                      - "<span class="value">&c&l&m-----------------------------</span>"<br><br>
+                
+                    <span class="comment"># When Maintenance is enabled (offline mode)</span><br>
+                    <span class="key">motd-online:</span><br>
+                      <span class="key">line1:</span> "<span class="value">&d&l{ServeName} &8&m &a &lOnline</span>"<br>
+                      <span class="key">line2:</span> "<span class="value">&f&lLorem ipsum dolor sit amet, consectetur...</span>"<br><br>
+                
+                    <span class="comment"># When Maintenance is disabled (online mode)</span><br>
+                    <span class="key">motd-offline:</span><br>
+                      <span class="key">line1:</span> "<span class="value">&d&l{ServeName} &8&m &c &lMaintenance</span>"<br>
+                      <span class="key">line2:</span> "<span class="value">&f&lLorem ipsum dolor sit amet, consectetur...</span>"<br><br>
+                
+                    <span class="key">no-permission-message:</span> "<span class="value">&cYou do not have permission to use this command.</span>"<br>
+                    <span class="key">maintenance-enabled-message:</span> "<span class="value">&aMaintenance mode enabled.</span>"<br>
+                    <span class="key">maintenance-disabled-message:</span> "<span class="value">&cMaintenance mode disabled.</span>"
+                </div>
+                
+                
+                <p><b>Permissions:</b></p>
+                <ul>
+                    <li><b class="mention">soffline.use</b> – Grants access to all plugin commands</li>
+                    <li><b class="mention">soffline.stay</b> – Allows players to remain online during server maintenance</li>
+                </ul><br>
+                
+                <p><b>Placeholders:</b></p>
+                <ul>
+                    <li><b class="mention">{maintenanceName}</b> – The name of the active maintenance</li>
+                    <li><b class="mention">{description}</b> – Description or reason for the maintenance</li>
+                    <li><b class="mention">{moderator}</b> – The moderator who initiated the maintenance</li>
+                    <li><b class="mention">{date}</b> – The date when the maintenance started</li>
+                </ul>                  
+            </section>
+            <hr>
+            
+
+            
+            <section id="sjoin">
+                <h2>sJoin</h2>
+                <p class="version">Version: 1.0-dev021525.2</p>
+                <p>
+                    Very simple plugin, allowing to make your custom join and left message (when player joins or leaves) 
+                    <br><br>
+                    You can see what you can change inside the file <b class="mention">config.yml</b>:  
+                </p>
+                
+                <div class="code-block">
+                    <span class="key">enabled:</span> <span class="value">true</span> <span class="comment"># Enable or disable the plugin</span><br><br>
+                    
+                    <span class="key">messages:</span><br>
+                    <span class="key">  join:</span> "<span class="value">&eWelcome &6{player}&e to the server!</span>"  <span class="comment"># Customizable join message</span><br>
+                    <span class="key">  left:</span> "<span class="value">&cGoodbye &6{player}&c, see you soon!</span>"  <span class="comment"># Customizable left message</span><br>
+                </div>
+                
+                <p><b>Placeholders:</b></p>
+                <ul>
+                    <li><b class="mention">{player}</b> – Name of the player</li>
+                </ul>     
+            </section>
+            <hr>            
+
+
+            <section id="scolors">
+                <h2>sColors</h2>
+                <p class="version">Version: 1.0</p>
+                <p>
+                    When you use command(s) <b>/colors</b> or aliases (<b>/cc</b>, <b>/clrs</b>, <b>/clr</b> or <b>/cc</b>), it will show you all possible text edits when using "&", such as colors, underlines, etc..
+                    <br><br>
+                    There's just a simple <b class="mention">config.yml</b>, where you can edit whatever you want to edit...
+                </p>
+                
+                <div class="code-block">
+                    <span class="key">colors:</span><br>
+                    <span class="key">  &0:</span> "<span class="value">Black</span>"<br>
+                    <span class="key">  &1:</span> "<span class="value">Dark Blue</span>"<br>
+                    <span class="key">  &2:</span> "<span class="value">Dark Green</span>"<br>
+                    <span class="key">  &3:</span> "<span class="value">Dark Aqua</span>"<br>
+                    <span class="key">  &4:</span> "<span class="value">Dark Red</span>"<br>
+                    <span class="key">  &5:</span> "<span class="value">Dark Purple</span>"<br>
+                    <span class="key">  &6:</span> "<span class="value">Gold</span>"<br>
+                    <span class="key">  &7:</span> "<span class="value">Gray</span>"<br>
+                    <span class="key">  &8:</span> "<span class="value">Dark Gray</span>"<br>
+                    <span class="key">  &9:</span> "<span class="value">Blue</span>"<br>
+                    <span class="key">  &a:</span> "<span class="value">Green</span>"<br>
+                    <span class="key">  &b:</span> "<span class="value">Aqua</span>"<br>
+                    <span class="key">  &c:</span> "<span class="value">Red</span>"<br>
+                    <span class="key">  &d:</span> "<span class="value">Light Purple</span>"<br>
+                    <span class="key">  &e:</span> "<span class="value">Yellow</span>"<br>
+                    <span class="key">  &f:</span> "<span class="value">White</span>"<br>
+                    <span class="key">  &k:</span> "<span class="value">Obfuscated</span>"<br>
+                    <span class="key">  &l:</span> "<span class="value">Bold</span>"<br>
+                    <span class="key">  &m:</span> "<span class="value">Strikethrough</span>"<br>
+                    <span class="key">  &n:</span> "<span class="value">Underline</span>"<br>
+                    <span class="key">  &o:</span> "<span class="value">Italic</span>"<br>
+                    <span class="key">  &r:</span> "<span class="value">Reset</span>"<br>
+                </div>
+            
+            </section>
+            <hr>
+            
+        
+
+            <footer>
+                <div class="footer-content">
+                    <p>© 2025 SoneMC - Minecraft Plugin Development</p>
+                    <p>Developed by Wejkey</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/DxpqN5WXRt" target="_blank"><i class="fab fa-discord"></i></a>
+                        <a href="https://github.com/wejkey/SoneMC" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.spigotmc.org/members/sonemc.2226356/#resources" target="_blank"><i class="fas fa-server"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
