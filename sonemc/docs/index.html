@@ -26,7 +26,7 @@
 
             </ul>
             <div class="wver">
-                <p>Last update: 2.17.2025</p>
+                <p>Last update: 2.18.2025</p>
             </div>
         </nav>
 
@@ -96,7 +96,14 @@
                     <li><b class="mention">{description}</b> – Description or reason for the maintenance</li>
                     <li><b class="mention">{moderator}</b> – The moderator who initiated the maintenance</li>
                     <li><b class="mention">{date}</b> – The date when the maintenance started</li>
-                </ul>                  
+                </ul><br>
+
+                <p><b>Commands:</b></p>
+                <ul>
+                    <li><b class="mention">/setoffline (title) (description)</b> – Enable maintenance mode</li>
+                    <li><b class="mention">/setonline</b> – Disable maintenance mode</li>
+                    <li><b class="mention">/soffline reload</b> – Reload plugin configuration</li>
+                </ul><br> 
             </section>
             <hr>
             
@@ -122,7 +129,12 @@
                 <p><b>Placeholders:</b></p>
                 <ul>
                     <li><b class="mention">{player}</b> – Name of the player</li>
-                </ul>     
+                </ul><br>
+
+                <p><b>Commands:</b></p>
+                <ul>
+                    <li><b class="mention">/sjoin reload</b> – Reload plugin configuration</li>
+                </ul><br> 
             </section>
             <hr>            
 
@@ -162,6 +174,11 @@
                     <span class="key">  &r:</span> "<span class="value">Reset</span>"<br>
                 </div>
             
+
+                <p><b>Commands:</b></p>
+                <ul>
+                    <li><b class="mention">/clr</b> – Displays all colors</li>
+                </ul><br> 
             </section>
             <hr>
             
@@ -178,45 +195,19 @@
                 </p>
                 
                 <div class="code-block">
-                    <span class="key">update_interval:</span> <span class="value">5</span> <span class="comment"># Update interval in seconds</span><br><br>
-                    
+                    <span class="comment"># Update interval in seconds (1 second = 20 ticks)</span><br>
+                    <span class="key">update_interval:</span> <span class="value">5</span><br><br>
+
+                    <span class="comment"># List of worlds and their corresponding time settings</span><br>
                     <span class="key">worlds:</span><br>
                     <span class="key">  world:</span><br>
-                    <span class="key">    enabled:</span> <span class="value">true</span> <span class="comment"># World where the plugin is enabled</span><br>
-                    <span class="key">    utc:</span> <span class="value">-5</span> <span class="comment"># New York (UTC-5)</span><br>
+                    <span class="key">    enabled:</span> <span class="value">true</span><br>
+                    <span class="key">    utc:</span> <span class="value">-5</span> <span class="comment"># UTC offset for New York</span><br>
                     <span class="key">  world2:</span><br>
-                    <span class="key">    enabled:</span> <span class="value">true</span> <span class="comment"># World where the plugin is enabled</span><br>
-                    <span class="key">    utc:</span> <span class="value">1</span> <span class="comment"># Berlin (UTC+1)</span><br>
+                    <span class="key">    enabled:</span> <span class="value">true</span><br>
+                    <span class="key">    utc:</span> <span class="value">1</span> <span class="comment"># UTC offset for Berlin</span><br>
                     <span class="key">  lobby:</span><br>
-                    <span class="key">    enabled:</span> <span class="value">false</span> <span class="comment"># Disabled world, no UTC offset</span><br>
-                    <span class="key">    utc:</span> <span class="value">null</span> <span class="comment"># No UTC offset</span><br><br>
-                    
-                    <span class="key">cities:</span><br>
-                    <span class="key">  "Baker Island":</span> <span class="value">-12</span> <span class="comment"># UTC Offset: -12</span><br>
-                    <span class="key">  "Pago Pago":</span> <span class="value">-11</span> <span class="comment"># UTC Offset: -11</span><br>
-                    <span class="key">  "Honolulu":</span> <span class="value">-10</span> <span class="comment"># UTC Offset: -10</span><br>
-                    <span class="key">  "Anchorage":</span> <span class="value">-9</span> <span class="comment"># UTC Offset: -9</span><br>
-                    <span class="key">  "Los Angeles":</span> <span class="value">-8</span> <span class="comment"># UTC Offset: -8</span><br>
-                    <span class="key">  "Denver":</span> <span class="value">-7</span> <span class="comment"># UTC Offset: -7</span><br>
-                    <span class="key">  "Mexico City":</span> <span class="value">-6</span> <span class="comment"># UTC Offset: -6</span><br>
-                    <span class="key">  "New York":</span> <span class="value">-5</span> <span class="comment"># UTC Offset: -5</span><br>
-                    <span class="key">  "Caracas":</span> <span class="value">-4</span> <span class="comment"># UTC Offset: -4</span><br>
-                    <span class="key">  "Buenos Aires":</span> <span class="value">-3</span> <span class="comment"># UTC Offset: -3</span><br>
-                    <span class="key">  "South Georgia Island":</span> <span class="value">-2</span> <span class="comment"># UTC Offset: -2</span><br>
-                    <span class="key">  "Azores":</span> <span class="value">-1</span> <span class="comment"># UTC Offset: -1</span><br>
-                    <span class="key">  "London":</span> <span class="value">0</span> <span class="comment"># UTC Offset: 0</span><br>
-                    <span class="key">  "Berlin":</span> <span class="value">1</span> <span class="comment"># UTC Offset: 1</span><br>
-                    <span class="key">  "Cairo":</span> <span class="value">2</span> <span class="comment"># UTC Offset: 2</span><br>
-                    <span class="key">  "Moscow":</span> <span class="value">3</span> <span class="comment"># UTC Offset: 3</span><br>
-                    <span class="key">  "Dubai":</span> <span class="value">4</span> <span class="comment"># UTC Offset: 4</span><br>
-                    <span class="key">  "Islamabad":</span> <span class="value">5</span> <span class="comment"># UTC Offset: 5</span><br>
-                    <span class="key">  "Almaty":</span> <span class="value">6</span> <span class="comment"># UTC Offset: 6</span><br>
-                    <span class="key">  "Bangkok":</span> <span class="value">7</span> <span class="comment"># UTC Offset: 7</span><br>
-                    <span class="key">  "Beijing":</span> <span class="value">8</span> <span class="comment"># UTC Offset: 8</span><br>
-                    <span class="key">  "Tokyo":</span> <span class="value">9</span> <span class="comment"># UTC Offset: 9</span><br>
-                    <span class="key">  "Sydney":</span> <span class="value">10</span> <span class="comment"># UTC Offset: 10</span><br>
-                    <span class="key">  "Honiara":</span> <span class="value">11</span> <span class="comment"># UTC Offset: 11</span><br>
-                    <span class="key">  "Fiji":</span> <span class="value">12</span> <span class="comment"># UTC Offset: 12</span><br>
+                    <span class="key">    enabled:</span> <span class="value">false</span> <span class="comment"># Disabled world, no time sync</span><br>
                 </div>
                 
                 
@@ -231,7 +222,19 @@
                     <li><b class="mention">sRealTime.srealtime.*</b> – Grants access to all sRealTime commands.</li>
                     
                 </ul><br> 
+
+
+                <p><b>Commands:</b></p>
+                <ul>
+                    <li><b class="mention">/srealtime settime (world) (utc)</b> – Set the time for a world</li>
+                    <li><b class="mention">/srealtime reload</b> – Reload plugin configuration</li>
+                    <li><b class="mention">/srealtime enable (world)</b> – Enable time sync</li>
+                    <li><b class="mention">/srealtime disable (world)</b> – Disable time sync</li>
+                    <li><b class="mention">/srealtime time (world)</b> – Show current world time</li>
+                    <li><b class="mention">/srealtime status</b> – Show all enabled worlds</li>
+                </ul><br> 
             </section>
+            <hr>
         
 
             <footer>
