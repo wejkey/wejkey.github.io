@@ -20,13 +20,12 @@
                 <li><a href="#docsmain"><i class="fas fa-info-circle"></i> DOCS</a></li>
                 <li><a href="#soffline"><i class="fas fa-coins"></i> sOffline</a></li>
                 <li><a href="#sjoin"><i class="fas fa-coins"></i> sJoin</a></li>
-                <li><a href="#scolors"><i class="fas fa-coins"></i> sColors</a></li>
                 <li><a href="#srealtime"><i class="fas fa-coins"></i> sRealTime</a></li>
 
 
             </ul>
             <div class="wver">
-                <p>Last update: 2.18.2025</p>
+                <p>Last update: 2.19.2025</p>
             </div>
         </nav>
 
@@ -111,7 +110,7 @@
             
             <section id="sjoin">
                 <h2>sJoin</h2>
-                <p class="version">Version: 1.0-dev021525.2</p>
+                <p class="version">Version: 1.0<p>
                 <p>
                     Very simple plugin, allowing to make your custom join and left message (when player joins or leaves) 
                     <br><br>
@@ -136,50 +135,6 @@
                     <li><b class="mention">/sjoin reload</b> – Reload plugin configuration</li>
                 </ul><br> 
             </section>
-            <hr>            
-
-
-            <section id="scolors">
-                <h2>sColors</h2>
-                <p class="version">Version: 1.0</p>
-                <p>
-                    When you use command(s) <b>/colors</b> or aliases (<b>/cc</b>, <b>/clrs</b>, <b>/clr</b> or <b>/cc</b>), it will show you all possible text edits when using "&", such as colors, underlines, etc..
-                    <br><br>
-                    There's just a simple <b class="mention">config.yml</b>, where you can edit whatever you want to edit...
-                </p>
-                
-                <div class="code-block">
-                    <span class="key">colors:</span><br>
-                    <span class="key">  &0:</span> "<span class="value">Black</span>"<br>
-                    <span class="key">  &1:</span> "<span class="value">Dark Blue</span>"<br>
-                    <span class="key">  &2:</span> "<span class="value">Dark Green</span>"<br>
-                    <span class="key">  &3:</span> "<span class="value">Dark Aqua</span>"<br>
-                    <span class="key">  &4:</span> "<span class="value">Dark Red</span>"<br>
-                    <span class="key">  &5:</span> "<span class="value">Dark Purple</span>"<br>
-                    <span class="key">  &6:</span> "<span class="value">Gold</span>"<br>
-                    <span class="key">  &7:</span> "<span class="value">Gray</span>"<br>
-                    <span class="key">  &8:</span> "<span class="value">Dark Gray</span>"<br>
-                    <span class="key">  &9:</span> "<span class="value">Blue</span>"<br>
-                    <span class="key">  &a:</span> "<span class="value">Green</span>"<br>
-                    <span class="key">  &b:</span> "<span class="value">Aqua</span>"<br>
-                    <span class="key">  &c:</span> "<span class="value">Red</span>"<br>
-                    <span class="key">  &d:</span> "<span class="value">Light Purple</span>"<br>
-                    <span class="key">  &e:</span> "<span class="value">Yellow</span>"<br>
-                    <span class="key">  &f:</span> "<span class="value">White</span>"<br>
-                    <span class="key">  &k:</span> "<span class="value">Obfuscated</span>"<br>
-                    <span class="key">  &l:</span> "<span class="value">Bold</span>"<br>
-                    <span class="key">  &m:</span> "<span class="value">Strikethrough</span>"<br>
-                    <span class="key">  &n:</span> "<span class="value">Underline</span>"<br>
-                    <span class="key">  &o:</span> "<span class="value">Italic</span>"<br>
-                    <span class="key">  &r:</span> "<span class="value">Reset</span>"<br>
-                </div>
-            
-
-                <p><b>Commands:</b></p>
-                <ul>
-                    <li><b class="mention">/clr</b> – Displays all colors</li>
-                </ul><br> 
-            </section>
             <hr>
             
 
@@ -202,24 +157,25 @@
                     <span class="key">worlds:</span><br>
                     <span class="key">  world:</span><br>
                     <span class="key">    enabled:</span> <span class="value">true</span><br>
-                    <span class="key">    utc:</span> <span class="value">-5</span> <span class="comment"># UTC offset for New York</span><br>
+                    <span class="key">    utc:</span> <span class="value">-5</span><br>
                     <span class="key">  world2:</span><br>
                     <span class="key">    enabled:</span> <span class="value">true</span><br>
-                    <span class="key">    utc:</span> <span class="value">1</span> <span class="comment"># UTC offset for Berlin</span><br>
-                    <span class="key">  lobby:</span><br>
-                    <span class="key">    enabled:</span> <span class="value">false</span> <span class="comment"># Disabled world, no time sync</span><br>
+                    <span class="key">    utc:</span> <span class="value">1</span><br><br>
+
+                    <span class="key">messages</span> "<span class="value">Reset</span>"<br>
+                    <span class="key">  reload_message:</span> "<span class="value">&aConfiguration reloaded!</span>"<br>
+                    <span class="key">  no_permission_message:</span> "<span class="value">&cYou do not have permission to use this command.</span>"<br>
+
                 </div>
                 
                 
                 <p><b>Permissions:</b></p>
                 <ul>
-                    <li><b class="mention">sRealTime</b> – Synchronizes Minecraft day/night cycle with real-world time based on city time zones.</li>
-                    <li><b class="mention">sRealTime.srealtime</b> – Manage time synchronization for worlds. Usage: "/srealtime <settime|reload|enable|disable|time|status>"</li>
-                    <li><b class="mention">sRealTime.srealtime.settime</b> – Allows the user to set the time for worlds.</li>
-                    <li><b class="mention">sRealTime.srealtime.reload</b> – Allows the user to reload the plugin configuration.</li>
-                    <li><b class="mention">sRealTime.srealtime.status</b> – Allows the user to view the status of all worlds.</li>
-                    <li><b class="mention">sRealTime.srealtime.time</b> – Allows the user to see the current time of a world.</li>
-                    <li><b class="mention">sRealTime.srealtime.*</b> – Grants access to all sRealTime commands.</li>
+                    <li><b class="mention">sRealTime.settime</b> – Allows the user to set the time for worlds.</li>
+                    <li><b class="mention">sRealTime.reload</b> – Allows the user to reload the plugin configuration.</li>
+                    <li><b class="mention">sRealTime.status</b> – Allows the user to view the status of all worlds.</li>
+                    <li><b class="mention">sRealTime.time</b> – Allows the user to see the current time of a world.</li>
+                    <li><b class="mention">sRealTime.*</b> – Grants access to all sRealTime commands.</li>
                     
                 </ul><br> 
 
