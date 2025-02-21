@@ -1,3 +1,4 @@
-# Wejkey's page
+# Wejkey's pages
 
-Site: __[there](https://wejkey.github.io)__ <br>
+Site: __[where?](https://wejkey.github.io)__ <br>
+SoneMC: __[there](https://wejkey.github.io/sonemc/)__
