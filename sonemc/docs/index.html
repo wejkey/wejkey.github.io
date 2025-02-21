@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="SoneMC - Custom Minecraft Plugin Development for 1.20+">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoneMC - Documentation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">Sone<span>MC</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#nti">NameTagIt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <!-- home Section -->
+    <section id="home" class="home">
+      <div class="overlay"></div>
+      <div class="container home-content">
+        <h1>Documentation</h1>
+        <p>
+          Plugins installation and configuration help.
+        </p>
+      </div>
+    </section>
+
+  <!-- Plugin A Details Section -->
+  <section id="nti" class="plugin-details">
+    <div class="container">
+      <h2>NameTagIt - 1.0</h2>
+      <p class="small-text">Plugin that allows to put nametag on mobs using only command, so you dont need any nametags. But <b>you need to look at the mob</b> when you naming it.</p>
+      <div class="plugin-features">
+        <h3>Features:</h3>
+        <ul>
+          <li>Name a mob without NT</li>
+          <li>Remove NT from a mob</li>
+        </ul>
+      </div>
+
+      <!-- Commands Table -->
+      <div class="plugin-commands">
+        <h3>Commands:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Command</th>
+              <th>Alias</th>
+              <th>Description</th>
+              <th>Permission</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>/nametagit (name)</td>
+              <td>/nti (name)</td>
+              <td>Assign a name to the mob you are looking at</td>
+              <td>nametagit.use</td>
+            </tr>
+            <tr>
+              <td>/nametagitremove</td>
+              <td>/ntir</td>
+              <td>Removes the name</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Permissions Table -->
+      <div class="plugin-permissions">
+        <h3>Permissions:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Permission</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>nametagit.use</td>
+              <td>Allows player to use all plugin's commands</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- config.yml -->
+      <div class="plugin-config">
+        <h3>config.yml:</h3>
+        <pre>
+prefix: "&bNameTagIt&f ▸ "
+no-permission: "&cYou cannot use this command"
+named-message: "&aYou added nametag on this mob"
+removed-message: "&cYou removed a nametag from this mob"
+no-mob-message: "&cYou are not looking at mob"
+</pre>
+      </div>
+
+      <!-- Media -->
+      <div class="plugin-media">
+        <h3>Media:</h3>
+        <img src="https://github.com/wejkey/SoneMC/raw/main/images/gifs/nametagit.gif">
+        </div>
+
+      <!-- Downloads -->
+      <div class="plugin-downloads">
+        <h3>Downloads:</h3>
+        <div class="download-buttons">
+          <a href="https://www.spigotmc.org/resources/nametagit.122724/" target="_blank" class="btn-download" data-tooltip="Download from SpigotMC">
+            <i class="fas fa-cubes"></i>
+          </a>
+          <a href="https://github.com/wejkey/NameTagIt/releases/tag/1.0" target="_blank" class="btn-download" data-tooltip="Download from GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      
+    <hr class="separator">
+
+  </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>SoneMC</h3>
+        <p>Minecraft plugin development</p>
+      </div>
+      <hr>
+      <div class="footer-links">
+        <a href="https://discord.gg/DxpqN5WXRt" target="_blank"><i class="fab fa-discord"></i></a>
+        <a href="https://github.com/wejkey" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.spigotmc.org/members/sonemc.2226356/" target="_blank"><i class="fas fa-cubes"></i></a>
+      </div>
+      <hr>
+      <div class="footer-copy">
+        <p>&copy; 2025 SoneMC - All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop"><i class="fas fa-chevron-up"></i></button>
+
+  <script>
+    const backToTopButton = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
+    });
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
